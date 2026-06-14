@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+    </header>
+    <main>
+
+        <div class="calculator">
+            <div class="display" id="display">0</div>
+                <div class="buttons">
+
+                     <!-- Row 1  -->
+                    <button onclick="clearButton()" class="btn clear" > C </button>
+                    <button onclick="appendToDisplay('/')" class="btn operator"  id="division"> / </button>
+                    
+                    <!-- Row2 -->
+                    
+                    <button onclick="appendToDisplay('7')"  class="btn number"    id="seven"    > 7 </button>
+                    <button onclick="appendToDisplay('8')"  class="btn number"    id="eight"    > 8 </button>
+                    <button onclick="appendToDisplay('9')"  class="btn number"    id="nine"     > 9 </button>
+                    <button onclick="appendToDisplay('*')"  class="btn operator"  id="multiply" > * </button>
+                    
+                    <!-- Row3 -->
+                    
+                    <button onclick=" appendToDisplay('4') " class="btn number" id="four"> 4 </button>
+                    <button onclick=" appendToDisplay('5') " class="btn number" id="five"> 5 </button>
+                    <button onclick=" appendToDisplay('6') " class="btn number" id="six"> 6 </button>
+                    <button onclick="appendToDisplay('-')" class="btn operator" id="subtract" > - </button>
+                    
+                    <!-- Row4 -->
+                    
+                    <button onclick="appendToDisplay('1')" class="btn number" id="one"> 1 </button>
+                    <button onclick="appendToDisplay('2')" class="btn number" id="two"> 2 </button>
+                    <button onclick="appendToDisplay('3')" class="btn number" id="three"> 3 </button>
+                    <button onclick="appendToDisplay('+')" class="btn operator" id="addition"> + </button>
+
+                    <!-- Row5 -->
+
+                    <button onclick="appendToDisplay('0')" class="btn number zero" id="zero"> 0 </button>
+                    <button onclick="appendToDisplay('.')" class="btn number" id="dot"> . </button>
+
+                    <!-- Row6 -->
+                     
+                    <button onclick="equalsto()" class="btn equals"> = </button>
+
+                 </div>
+            
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+
+    
+</body>
+</html>

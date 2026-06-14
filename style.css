@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a2e;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator BOX */
+
+.calculator{
+
+    background-color: #16213e;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+    width: 320px;
+}
+
+/* ===== DISPLAY SCREEN ===== */
+
+.display {
+
+    background-color: #0f3460;
+    color: #00fff5;
+    font-size: 36px;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 80px;
+    word-break: break-all;
+    letter-spacing: 2px;
+}
+
+/* Buttons */
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+/* ===== ALL BUTTONS COMMON ===== */
+.btn {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.2s;
+    font-weight: bold;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+/* ===== NUMBER BUTTONS ===== */
+.number {
+    background-color: #e94560;
+    color: white;
+}
+
+/* ===== OPERATOR BUTTONS ===== */
+.operator {
+    background-color: #0f3460;
+    color: #00fff5;
+}
+
+/* ===== CLEAR BUTTON ===== */
+.clear {
+    background-color: #e94560;
+    color: white;
+    grid-column: span 3;
+}
+
+/* ===== EQUALS BUTTON ===== */
+.equals {
+    background-color: #00fff5;
+    color: #1a1a2e;
+    grid-column: span 2;
+}
+
+/* ===== ZERO BUTTON ===== */
+/* .zero {
+    grid-column: span 2;
+} */
